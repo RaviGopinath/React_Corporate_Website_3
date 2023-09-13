@@ -1,0 +1,133 @@
+.pageheading-sec{
+    z-index: 11;
+}
+.contact-map-block{
+    border: 20px solid #f8d6c8;
+    border-radius: 10px;
+    padding: 0 !important;
+}
+.contact-info-inner {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 30px 10px;
+    position: relative;
+    z-index: 2;
+}
+.contact-info-icon {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-info-icon i {
+    font-size: 69px;
+    color: #fff;
+    opacity: .2;
+}
+.icofont-google-map:before {
+    content: "";
+    font-family: icofont;
+    font-style: normal;
+}
+.contact-info-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.contact-info-text span {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+.contact-info-text form {
+    padding: 0 24px;
+}
+.contact-info-subscribe {
+    position: relative;
+}
+.contact-info-text input {
+    padding: 12px 70px 12px 12px;
+    color: #fff;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #ddd;
+}
+.contact-info-text input::placeholder{
+    color: #ddd;
+}
+.contact-info-subscribe button {
+    position: absolute;
+    right: 25px;
+    display: inline-block;
+    height: 100%;
+    width: 60px;
+    text-align: center;
+    background: #f8d6c8;
+    border: none;
+}
+.icofont-paper-plane:before {
+    content: "";
+    font-family: icofont;
+    font-style: normal;
+}
+
+/* section-4 */
+.contact-form-section h2{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222242;
+    font-family: Nunito, sans-serif;
+}
+.contact-form-section input{
+    width: 100%;
+    display: inline-block;
+    margin-left: 3%;
+    border-radius : 0 !important;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    background: transparent;
+    padding: 14px 22px;
+}
+.contact-form-section input:focus{
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+}
+.contact-form-section textarea{
+    width: 96%;
+    display: inline-block;
+    margin-left: 3%;
+    border-radius : 0 !important;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    background: transparent;
+    padding: 26px 22px;
+    height: 170px;
+}
+.contact-form-section textarea:focus{
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+}
+.contact-form-section button{
+    background: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 26px !important;
+    border-radius: 0 !important;
+    margin-left: 3%;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width:768px){
+    .contact-form-section input{
+        width: 30%;
+    }
+}

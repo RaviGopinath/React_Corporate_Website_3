@@ -1,0 +1,103 @@
+.header-card{
+    display: flex !important;
+    justify-content : space-between;
+    align-items: center;
+    padding: 18px;
+}
+.header-img{
+    max-width: 80%;
+}
+.header-btn{
+    background-color: var(--primary-color) !important;
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    border: 1px solid var(--primary-color) !important;
+    font-family: Nunito,sans-serif;
+}
+.header-btn:hover{
+    background-color: #fff !important;
+    color: var(--secondary-color) !important;
+    .header-support-btn-link{
+        color: var(--primary-color);
+    }
+}
+.header-support-btn-link{
+    text-decoration: none;
+    color: #fff;
+}
+.mobile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-bar{
+    font-size: 22px !important;
+    color: var(--primary-color) !important;
+}
+.lg-header-card{
+    border-radius: 0 !important;
+}
+.fixed-header{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 100 !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+
+}
+.sm-header-card{
+    border-radius: 0 !important;
+    position: relative !important;
+}
+.sm-toggle-header-img{
+    width: 150px;
+}
+.header-nav-secion{
+    padding-left: 3rem !important;
+    margin-left: 5rem !important;
+}
+.mobile-toggle-header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sm-close-btn-block{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-toggle-close-btn{
+    color: #fff;
+}
+.mobile-toggle{
+    position: absolute !important;
+    top: 24%;
+    left: calc(100% - 250px);
+    width: 250px !important;
+    height: 230px !important;
+    line-height: 35px;
+    border-radius: 0 !important;
+    overflow-y: scroll;
+    z-index: 12;
+}
+.header-nav{
+    color: #2d2d43;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Nunito, sans-serif;
+}
+.header-nav:hover{
+    color: var(--primary-color);
+}
+.mobile-nav-link{
+    text-decoration: none;
+    color: #2d2d43;
+    cursor: pointer;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+}

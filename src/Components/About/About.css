@@ -1,0 +1,291 @@
+.container-fluid{
+    padding: 0 !important;
+    overflow-x:hidden;
+    overflow: hidden;
+}
+.pageheading-sec {
+    background-image: url('../../../public/breadcrumbBanner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 130px;
+    padding-top: 130px;
+    position: relative;
+    background-size: cover;
+}
+.breadcrumb-overlay {
+    background-color: #0006;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.page-heading h1 {
+    font-size: 74px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    font-family: Nunito, sans-serif;
+}
+.breadcrumb-list {
+    text-align: center;
+}
+.breadcrumb-list ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-list li:first-child {
+    padding-left: 0;
+    position: relative;
+}
+.breadcrumb-list li:first-child::after{
+    content : "";
+    position: absolute;
+    color: #fff;
+    left: 105%;
+    top: 10%;
+    font-family: IcoFont;
+}   
+.breadcrumb-list li:last-child a {
+    color: var(--primary-color);
+}
+.breadcrumb-list li {
+    display: inline-block;
+    position: relative;
+    padding: 0 7px;
+}
+.breadcrumb-list li a{
+    text-decoration : none;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* section-2 */
+.about-section2-header{
+    font-size: 48px;
+    color: #222242;
+    text-transform: capitalize;
+    font-weight: bolder !important;
+    font-family: Nunito, sans-serif;
+    line-height: 1.5;
+}
+.about-section2-content{
+    color: #4d4d4e;
+    font-family: Nunito,sans-serif;
+    line-height: 1.5;
+}
+.about-section2-block1-img-block{
+    width: 120px;
+    height: 85px;
+    margin-right: 10px;
+    border: 6px solid #ff7b4b;
+    text-align: center;
+    line-height: 60px;
+    background: var(--primary-color);
+}
+.about-section2-block-1-img{
+    max-width: 100%;
+}
+.about-section2-content-block{
+    display: flex;
+    align-items: center;
+}
+.about-section2-card-header{
+    text-transform: capitalize;
+    color: #222242;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+}
+.about-section2-card-content{
+    color: #222242;
+    font-family: Nunito, sans-serif;
+}
+
+/* section-4 */
+.about-card{
+    border-radius: 0 !important;
+    box-shadow: 0px 2px 9px 5px #e4e7eb;
+}
+.services-i-left {
+    float: left;
+    position: relative;
+    width: 85px;
+    height: 80px;
+}
+.services-i-left a {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    z-index: 222;
+    left: 0;
+    right: 27%;
+    text-align: center;
+    top: 37%;
+    transform: translateY(-50%);
+    font-size: 34px;
+    text-decoration: none;
+}
+/* .icofont-money-bag:before {
+    content: "";
+} */
+.services-i-left:after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../public/feature-v3-shape.png');
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 67px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: all .5s ease-out;
+}
+i:before {
+    font-family: icofont;
+    font-style: normal;
+}
+.about-card-header-block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about-card-header{
+    text-transform: capitalize;
+    line-height: 32px;
+    font-size: 21px;
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-family: Nunito,sans-serif;
+    color: #222242;
+}
+.about-card-content{
+    color: #4d4d4e;
+    font-family: Nunito, sans-serif;
+}
+.about-card-link{
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+    position: relative;
+}
+.about-card-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 105%;
+    width: 0%;
+    height: 1px;
+    background: var(--primary-color);
+    transition: 0.5s ease;
+}
+.about-card-link:hover::after{
+    animation : revealLine 0.5s ease-in-out forwards;
+}
+.about-card-link:not(:hover)::after{
+    animation: hideLine 0.5s ease-out backwards;
+}
+
+@keyframes revealLine{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes hideLine{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
+/* section-6 */
+.about-section6-header{
+    font-size: 48px;
+    color: #222242;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: Nunito, sans-serif;
+}
+.about-slider-card{
+    display: inline-flex;
+    padding: 40px 50px;
+    background: #29283f none repeat scroll 0 0 !important;
+    position: relative;
+    text-align: left;
+    margin-left: 70px;
+    border: 1px solid #36354d;
+    transition: all .4s ease 0s;
+    color: #ddd !important;
+    border-radius: 0 !important;    
+}
+.about-slider-name{
+    font-size: 18px;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.about-slider-role{
+    color: #777 !important;
+    font-weight: 400;
+}
+.icofont-star{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width : 500px){
+    .about-section2-block1-img-block {
+        width: 320px !important;
+    }
+    .services-i-left a{
+        right: 5% !important;
+    }
+}
+
+@media (min-width : 501px) and (max-width :767px){
+    .about-section2-block1-img-block {
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .about-slider-card{
+        margin-left: 0px !important;
+    }
+    .last-name{
+        margin-top: 20px;
+    }
+    .about-section-2{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width :768px) and (max-width : 992px){
+    .about-slider-card {
+        margin-left: 40px !important;
+    }
+}
+
+@media screen and (min-width : 992px){
+    .about-section-2{
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    .about-section2-block-1{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}

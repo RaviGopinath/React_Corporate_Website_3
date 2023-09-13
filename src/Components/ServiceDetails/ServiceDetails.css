@@ -1,0 +1,191 @@
+.service-details-section-1 img{
+    width: 100%;
+}
+.service-details-section-1 h1{
+    font-size: 30px;
+    color : #222242;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: Nunito, sans-serif;
+}
+.service-details-section-1 p{
+    color: #4d4d4e;
+    font-family: Nunito, sans-serif;
+}
+.service-details-section-1 h2{
+    font-size: 24px;
+    color : #222242;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: Nunito, sans-serif;
+}
+.service-details-section-1 ul{
+    list-style-type: none;
+}
+.service-details-section-1 li{
+    padding: 0;
+    position: relative;
+}
+.service-details-section-1 li::before{
+    content: "";
+    font-family: icofont;
+    left: -30px;
+    top: 6px;
+    position: absolute;
+    color: #fff;
+    background: #ff4500;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 100%;
+    font-size: 10px;
+    text-align: center;
+}
+.service-details-section2-search-section{
+    background: #f7e0d7;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.service-details-section2-search-section form{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.service-details-section2-search-section input{
+    background: #fff none repeat scroll 0 0;
+    padding: 10px 70px 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: #2d2d43;
+}
+.service-details-section2-search-section button {
+    color: #2d2d43;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    background: transparent;
+    top: 0;
+    border-left: 1px solid #ececec !important;
+    cursor: pointer;
+    border: none;
+}
+.service-details-category-section{
+    background: #f7e0d7;
+}
+.service-details-category-section h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #222242;
+    font-style: Nunito, sans-serif;
+    font-weight: 600;
+}
+.service-details-category-section ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+}
+.service-details-link{
+    text-decoration :none !important;
+    display: inline-block;
+    width: 100%;
+    color: #2f2e44;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    position: relative;
+}
+.service-details-link::before{
+    content: "";
+    font-family: IcoFont;
+    right: 25px;
+    top: 50%;
+    position: absolute;
+    color: #ff4500;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    font-size: 17px;
+    text-align: center;
+    transform: translateY(-50%);
+    line-height: 20px;
+    transition: all .4s ease-in-out 0s;
+}
+.service-details-link:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+.service-details-link:hover::before{
+    color: #fff;
+}
+.service-details-link span{
+    float: right;
+    color: var(--primary-color);
+    margin-right: 20px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.service-details-link:hover span{
+    color: #fff;
+}
+.service-section-query-block{
+    display: inline-block;
+    width: 100%;
+    padding: 60px 40px;
+    color: #fff;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #29283e;
+    background: #252439;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+}
+.service-section-query-block h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.service-section-query-block input{
+    background: #212035 none repeat scroll 0 0;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+.service-section-query-block input::placeholder{
+    color: #ddd !important;
+}
+.service-section-query-block input:focus{
+    background: #212035;
+    border-color: #212035 !important;
+    box-shadow: none;
+    color: #ddd;
+}
+.service-section-query-block button{
+    padding: 10px 40px;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0 !important;
+}
+.service-section-query-block button:hover{
+    background-color: var(--primary-color) !important;
+    border: 1px solid #fff !important;
+}
+.service-section-query-block p{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: Nunito, sans-serif;
+}
+
+
+@media screen and (min-width : 992px){
+    .service-details-section1-block-2{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+}

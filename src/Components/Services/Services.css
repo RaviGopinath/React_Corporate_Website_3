@@ -1,0 +1,127 @@
+.block-header{
+    font-size: 48px;
+    color: #222242;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: Nunito, sans-serif;
+}
+.service-card{
+    /* width: 115%; */
+    box-shadow: 0 2px 9px 5px #e4e7eb;
+}
+.service-card-img-block{
+    position: relative;
+}
+.service-card-img-block::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: #29283f;
+    opacity: 0.9;
+    transition: all .4s ease 0s;
+}
+.service-card:hover .service-card-img-block::before{
+    animation: hoverEffrect 0.5s ease-in-out forwards;
+}
+.service-card:not(:hover) .service-card-img-block::before {
+    animation : leaveEffect 0.5s ease-out backwards;
+}
+@keyframes hoverEffrect{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes leaveEffect{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+.service-card-img{
+    width: 100%;
+}
+.service-sub-img-block{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    line-height: 70px;
+    padding: 12px;
+}
+.service-card-title{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+}
+.service-card-content-block{
+    padding: 30px;
+}
+.service-card-content{
+    color: #4d4d4e;
+    font-family: Nunito, sans-serif;
+}
+.service-card-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: Nunito, sans-serif;
+}
+.service-card-link::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    top: 115%;
+    transition: 0.5s;
+    
+}
+.service-card-link:hover::after{
+    animation: revealLine 0.5s ease-in-out forwards;
+}
+.service-card-link:not(:hover)::after{
+    animation : leaveEffect 0.5s ease-out backwards;
+}
+
+@keyframes revealLine{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 992px){
+    .service-card {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width : 992px){
+    .service-card-section{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
